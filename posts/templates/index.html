@@ -1,1 +1,15 @@
-<h1>Hello</h1>
+<html>
+<body>
+<div class="row">
+    <div class="leftcolumn">
+        {% for post in posts reversed %}
+        <div class="card">
+            <h2>{{post.title}}</h2>
+            <h5>{{post.created_At}}</h5>
+            <p>{{post.body}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
